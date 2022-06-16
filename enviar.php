@@ -8,7 +8,7 @@ $to = $_POST['email'];
 $subject = $_POST['subject'];
 $message = $_POST['message'];
 
-$body = "name" . $name . "\r\n" . "to" . $to . "\r\n" . "subject" . $subject . "\r\n" . "message" . $message;
+$body = "name " . $name . "\r\n" . "to " . $to . "\r\n" . "subject " . $subject . "\r\n" . "message " . $message;
 
 mail($my_mail, "probando el envio de mail", $body);
 ?>
