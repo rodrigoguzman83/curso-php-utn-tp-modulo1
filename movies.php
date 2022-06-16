@@ -1,4 +1,4 @@
-<?php include('header.php'); ?>
+<?php include('header.php');?>
 
 <div class="container mt-3">
     <h1>MOVIES</h1>
@@ -9,9 +9,8 @@
     </div>
 
     <?php
-    $fans = $_GET['fans'];
-    if (isset($fans)) {
-        switch ($fans) {
+    if (isset($_GET['fans'])) {
+        switch ($_GET['fans']) {
             case 'umc':
                 $title = 'Marvel';
                 $description = 'El universo de superheroes mas famosos';
